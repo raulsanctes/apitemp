@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "Temperatura": "Temperatura",
+      "Ciudad": "Ciudad"
+    },
+    {
+      "Temperatura": "21°",
+      "Ciudad": "Resistencia"
+    },
+    {
+      "Temperatura": "21°",
+      "Ciudad": "Corrientes"
+    }
+  ]
+}

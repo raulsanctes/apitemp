@@ -6,8 +6,16 @@ async function getTemp() {
     const response = await fetch(api_url);
     const data = await response.json();    
     const dataJson = JSON.stringify(data, null, 2);
+    const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataJson);
+    const exportFileDefaultName = 'data.json';
+
+    const linkElement = document.createElement('a');
+
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
+    
     console.log(dataJson);    
 }
 
 getTemp();
-
